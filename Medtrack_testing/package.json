@@ -1,0 +1,14 @@
+{
+  "name": "medtrack_testing",
+  "version": "1.0.0",
+  "description": "To test medtrack mobile application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cod3Gazer",
+  "license": "ISC",
+  "devDependencies": {
+    "webdriverio": "^8.35.1"
+  }
+}

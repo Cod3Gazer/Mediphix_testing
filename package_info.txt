@@ -1,0 +1,192 @@
+Activity Resolver Table:
+  Non-Data Actions:
+      android.intent.action.MAIN:
+        d47d978 com.sec.android.app.popupcalculator/.Calculator filter 6aa5851
+          Action: "android.intent.action.MAIN"
+          Category: "android.intent.category.LAUNCHER"
+
+Receiver Resolver Table:
+  Non-Data Actions:
+      com.samsung.android.intent.action.REQUEST_RESTORE_CALCULATOR:
+        5dd1524 com.sec.android.app.popupcalculator/.calc.backup.HistoryBnRReceiver filter 96b288d
+          Action: "com.samsung.android.intent.action.REQUEST_RESTORE_CALCULATOR"
+          Action: "com.samsung.android.intent.action.RESPONSE_VERIFY_CALCULATOR"
+          Action: "com.samsung.android.intent.action.REQUEST_BACKUP_CALCULATOR"
+      com.samsung.android.intent.action.RESPONSE_VERIFY_CALCULATOR:
+        5dd1524 com.sec.android.app.popupcalculator/.calc.backup.HistoryBnRReceiver filter 96b288d
+          Action: "com.samsung.android.intent.action.REQUEST_RESTORE_CALCULATOR"
+          Action: "com.samsung.android.intent.action.RESPONSE_VERIFY_CALCULATOR"
+          Action: "com.samsung.android.intent.action.REQUEST_BACKUP_CALCULATOR"
+      com.samsung.android.intent.action.REQUEST_BACKUP_CALCULATOR:
+        5dd1524 com.sec.android.app.popupcalculator/.calc.backup.HistoryBnRReceiver filter 96b288d
+          Action: "com.samsung.android.intent.action.REQUEST_RESTORE_CALCULATOR"
+          Action: "com.samsung.android.intent.action.RESPONSE_VERIFY_CALCULATOR"
+          Action: "com.samsung.android.intent.action.REQUEST_BACKUP_CALCULATOR"
+      android.appwidget.action.APPWIDGET_UPDATE:
+        d1678b6 com.sec.android.app.popupcalculator/.widget.CalculatorWidgetProvider filter e1d09b7
+          Action: "android.appwidget.action.APPWIDGET_UPDATE"
+
+Domain verification status:
+
+Permissions:
+  Permission [com.sec.android.app.popupcalculator.CalculatorProvider.permission.WRITE] (9a9d530):
+    sourcePackage=com.sec.android.app.popupcalculator
+    uid=10278 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{f6495a9 com.sec.android.app.popupcalculator.CalculatorProvider.permission.WRITE}
+    flags=0x0
+
+Permissions:
+  Permission [com.sec.android.app.popupcalculator.CalculatorProvider.permission.READ] (d23672e):
+    sourcePackage=com.sec.android.app.popupcalculator
+    uid=10278 gids=[] type=0 prot=signature|privileged
+    perm=PermissionInfo{d1722cf com.sec.android.app.popupcalculator.CalculatorProvider.permission.READ}
+    flags=0x0
+
+Registered ContentProviders:
+  com.sec.android.app.popupcalculator/.calc.model.CalculatorProvider:
+    Provider{a8f145c com.sec.android.app.popupcalculator/.calc.model.CalculatorProvider}
+
+ContentProvider Authorities:
+  [com.sec.android.app.popupcalculator.CalculatorProvider]:
+    Provider{a8f145c com.sec.android.app.popupcalculator/.calc.model.CalculatorProvider}
+      applicationInfo=ApplicationInfo{247e365 com.sec.android.app.popupcalculator}
+
+Key Set Manager:
+  [com.sec.android.app.popupcalculator]
+      Signing KeySets: 2
+
+Packages:
+  Package [com.sec.android.app.popupcalculator] (502c83a):
+    appId=10278
+    pkg=Package{20d1ceb com.sec.android.app.popupcalculator}
+    codePath=/data/app/~~eeWfnrvoc-BapTJlES3E4A==/com.sec.android.app.popupcalculator-PFDvLmggkk_XHltdeADsyg==
+    resourcePath=/data/app/~~eeWfnrvoc-BapTJlES3E4A==/com.sec.android.app.popupcalculator-PFDvLmggkk_XHltdeADsyg==
+    legacyNativeLibraryDir=/data/app/~~eeWfnrvoc-BapTJlES3E4A==/com.sec.android.app.popupcalculator-PFDvLmggkk_XHltdeADsyg==/lib
+    extractNativeLibs=false
+    primaryCpuAbi=arm64-v8a
+    secondaryCpuAbi=null
+    cpuAbiOverride=null
+    versionCode=1230001000 minSdk=34 targetSdk=34
+    minExtensionVersions=[]
+    versionName=12.3.00.1
+    usesNonSdkApi=false
+    splits=[base]
+    apkSigningVersion=2
+    flags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privateFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    forceQueryable=false
+    dataDir=/data/user/0/com.sec.android.app.popupcalculator
+    supportsScreens=[small, medium, large, xlarge, resizeable, anyDensity]
+    usesOptionalLibraries:
+      androidx.window.extensions
+      androidx.window.sidecar
+    timeStamp=2023-12-06 04:31:04
+    lastUpdateTime=2023-12-06 04:31:55
+    installerPackageName=com.sec.android.app.samsungapps
+    installerPackageUid=10073
+    initiatingPackageName=com.sec.android.app.samsungapps
+    originatingPackageName=null
+    packageSource=0
+    appMetadataFilePath=null
+    signatures=PackageSignatures{7271a48 version:2, signatures:[1d7faccb], past signatures:[]}
+    installPermissionsFixed=true
+    pkgFlags=[ HAS_CODE ALLOW_CLEAR_USER_DATA LARGE_HEAP ]
+    privatePkgFlags=[ PRIVATE_FLAG_ACTIVITIES_RESIZE_MODE_RESIZEABLE_VIA_SDK_VERSION ALLOW_AUDIO_PLAYBACK_CAPTURE PRIVATE_FLAG_ALLOW_NATIVE_HEAP_POINTER_TAGGING ]
+    apexModuleName=null
+    declared permissions:
+      com.sec.android.app.popupcalculator.CalculatorProvider.permission.READ: prot=signature|privileged
+      com.sec.android.app.popupcalculator.CalculatorProvider.permission.WRITE: prot=signature|privileged
+    requested permissions:
+      com.samsung.keyguard.SHORTCUT_PERMISSION
+      com.sec.android.app.parser.permission.SecretCodeIME
+      android.permission.GET_TASKS
+      android.permission.VIBRATE
+      com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+      android.permission.INTERNET
+      android.permission.ACCESS_NETWORK_STATE
+      com.sec.spp.permission.TOKEN_b8a82002e8796582a00da99945c0030cbf5b2363606544cbe5839d0ed225f6ab631336df38d03c8f062aef9f4f0b12c876a16353cf9bd4793def6834d2addffa5f34e4b04344a60fa268dd722f793777fab4263f8be781f454a49e1c9362261e00cbd5b159b774555826c585f7f04e66134faca83b6f9e98441dcb54022e7d3e
+    install permissions:
+      android.permission.GET_TASKS: granted=true
+      android.permission.INTERNET: granted=true
+      android.permission.ACCESS_NETWORK_STATE: granted=true
+      com.sec.android.app.parser.permission.SecretCodeIME: granted=true
+      com.samsung.keyguard.SHORTCUT_PERMISSION: granted=false
+      android.permission.VIBRATE: granted=true
+    User 0: ceDataInode=7396 installed=true hidden=false suspended=false distractionFlags=0 stopped=false notLaunched=false enabled=0 instant=false virtual=false
+      installReason=0
+      firstInstallTime=2009-01-01 04:00:00
+      uninstallReason=0
+      overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      legacy overlay paths:
+        /product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+      lastDisabledCaller: com.sec.android.app.samsungapps
+      gids=[3003]
+      runtime permissions:
+
+Queries:
+  system apps queryable: false
+  queries via forceQueryable:
+  queries via package name:
+    com.sec.android.app.popupcalculator:
+      com.sec.android.app.samsungapps
+    com.samsung.android.app.notes:
+      com.sec.android.app.popupcalculator
+  queries via component:
+    com.microsoft.office.outlook:
+      com.sec.android.app.popupcalculator
+    com.facebook.work:
+      com.sec.android.app.popupcalculator
+    com.instagram.android:
+      com.sec.android.app.popupcalculator
+    com.bumble.app:
+      com.sec.android.app.popupcalculator
+    com.truecaller:
+      com.sec.android.app.popupcalculator
+    com.mxtech.videoplayer.ad:
+      com.sec.android.app.popupcalculator
+    com.facebook.orca:
+      com.sec.android.app.popupcalculator
+    org.grow90.whatsub:
+      com.sec.android.app.popupcalculator
+    com.dbs.in.cbcards:
+      com.sec.android.app.popupcalculator
+    com.ojassoft.astrosage:
+      com.sec.android.app.popupcalculator
+    com.miui.weather2:
+      com.sec.android.app.popupcalculator
+    com.miui.player:
+      com.sec.android.app.popupcalculator
+    com.rlk.weathers:
+      com.sec.android.app.popupcalculator
+    com.google.android.play.games:
+      com.sec.android.app.popupcalculator
+    com.tencent.ig:
+      com.sec.android.app.popupcalculator
+    com.facebook.katana:
+      com.sec.android.app.popupcalculator
+  queryable via interaction:
+    User 0:
+      [com.samsung.android.sume.nn.service,com.samsung.android.knox.mpos,com.samsung.oda.service,com.samsung.accessibility,com.android.settings,com.sec.android.app.desktoplauncher,com.sec.epdg,com.samsung.android.fmm,com.samsung.android.knox.attestation,com.samsung.android.lool,com.sec.android.app.wlantest,com.samsung.android.svcagent,com.qti.snapdragon.qdcm_ff,com.samsung.SMT,android,com.sec.android.diagmonagent,com.samsung.sait.sohservice,com.samsung.android.smartface,com.samsung.aasaservice,com.sec.android.app.personalization,com.sec.android.app.servicemodeapp,com.samsung.android.app.settings.bixby,com.samsung.android.da.daagent,com.android.dynsystem,com.samsung.android.camerasdkservice,com.sec.android.emergencylauncher,com.sec.bcservice,com.samsung.android.mdecservice,com.sec.app.RilErrorNotifier,com.sec.android.iaft,com.sec.modem.settings,com.wssyncmldm,com.samsung.android.dqagent,com.samsung.android.wifi.ai,com.samsung.android.emergency,com.sem.factoryapp,com.android.location.fused,com.android.providers.settings,com.samsung.gpuwatchapp,com.sec.android.app.apex,com.sec.android.soagent,com.samsung.android.keycustomizationinfobackupservice,com.samsung.android.biometrics.app.setting,com.android.keychain,com.sec.facatfunction,com.sec.enterprise.mdm.services.simpin,com.sec.android.app.factorykeystring,com.samsung.android.provider.filterprovider,com.samsung.android.knox.pushmanager,com.samsung.android.bixby.wakeup,com.samsung.android.peripheral.framework,com.sec.imsservice,com.sec.android.sdhms,com.samsung.android.hdmapp,com.sec.android.smartfpsadjuster,com.samsung.android.smartswitchassistant,com.sec.usbsettings,com.samsung.android.forest,com.samsung.cmfa.AuthTouch,com.samsung.android.photoremasterservice,com.samsung.euicc,com.sec.android.app.dexonpc,com.samsung.android.bbc.bbcagent,com.samsung.android.vtcamerasettings,com.samsung.android.cameraxservice,com.samsung.android.aircommandmanager,com.samsung.android.stickercenter,com.samsung.android.themecenter,com.samsung.android.app.dressroom,com.sec.android.app.quicktool,com.sec.android.app.SecSetupWizard,com.sec.android.CcInfo,com.sec.imslogger,com.sec.android.app.hwmoduletest,com.samsung.android.knox.zt.framework,com.skms.android.agent,com.samsung.android.app.omcagent,com.sec.mhs.smarttethering,com.sec.automation,com.sec.factory.camera,com.android.wallpaperbackup,com.samsung.android.brightnessbackupservice,com.sec.android.app.parser,com.samsung.android.providers.factory,com.android.server.telecom,com.sec.sve,com.android.localtransport,com.samsung.android.dck.timesync,com.android.inputdevices]:
+        com.sec.android.app.popupcalculator
+      com.samsung.android.honeyboard:
+        com.sec.android.app.popupcalculator
+  queryable via uses-library:
+
+Dexopt state:
+  [com.sec.android.app.popupcalculator]
+    path: /data/app/~~eeWfnrvoc-BapTJlES3E4A==/com.sec.android.app.popupcalculator-PFDvLmggkk_XHltdeADsyg==/base.apk
+      arm64: [status=verify] [reason=vdex] [primary-abi]
+        [location is /data/app/~~eeWfnrvoc-BapTJlES3E4A==/com.sec.android.app.popupcalculator-PFDvLmggkk_XHltdeADsyg==/oat/arm64/base.vdex]
+
+Compiler stats:
+  [com.sec.android.app.popupcalculator]
+    (No recorded stats)
+
+HeimdAllFS state:
+  [com.sec.android.app.popupcalculator]
+    path: /data/app/~~eeWfnrvoc-BapTJlES3E4A==/com.sec.android.app.popupcalculator-PFDvLmggkk_XHltdeADsyg==/base.apk
+    Compressed? False
+  [ Summary ]
+    # of packages: 1 / # of packages in DATA: 1 (1)
+    Compressed apks info - sum of orig size: 940 / sum of compr size : 940
