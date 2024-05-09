@@ -23,6 +23,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+
 @TestMethodOrder(OrderAnnotation.class)
 public class MediphixAppTest_IndividualRun {
 
@@ -138,6 +139,11 @@ public class MediphixAppTest_IndividualRun {
     @Test
     @Order(4)
     public void testLogin_Incorrect_Username() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Login("12user", "12345678", 0);
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//android.widget.Toast)[1]")));
@@ -446,6 +452,8 @@ public class MediphixAppTest_IndividualRun {
         drugNumberTxtBox.sendKeys("45633");
         MobileElement storageLocationDropDown = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugStorage");
         storageLocationDropDown.click();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Ward Office']")));
         MobileElement storageLocationDropDownValue = (MobileElement) driver.findElementByXPath("//*[@text='Ward Office']");
         storageLocationDropDownValue.click();
         MobileElement drugExpiryTxtBox = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugExpiry");
@@ -453,7 +461,6 @@ public class MediphixAppTest_IndividualRun {
         MobileElement drugSaveButton = (MobileElement) driver.findElementById("com.example.mediphix_app:id/registerDrugBtn");
         drugSaveButton.click();
         
-        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//android.widget.Toast)[1]")));
         MobileElement toastMessageElement = (MobileElement) driver.findElement(By.xpath("(//android.widget.Toast)[1]"));
         Assertions.assertEquals("Please enter name of drug.", toastMessageElement.getText(), "Alert message text is not as expected.");    
@@ -479,6 +486,8 @@ public class MediphixAppTest_IndividualRun {
         drugNumberTxtBox.sendKeys("");
         MobileElement storageLocationDropDown = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugStorage");
         storageLocationDropDown.click();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Ward Office']")));
         MobileElement storageLocationDropDownValue = (MobileElement) driver.findElementByXPath("//*[@text='Ward Office']");
         storageLocationDropDownValue.click();
         MobileElement drugExpiryTxtBox = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugExpiry");
@@ -486,7 +495,6 @@ public class MediphixAppTest_IndividualRun {
         MobileElement drugSaveButton = (MobileElement) driver.findElementById("com.example.mediphix_app:id/registerDrugBtn");
         drugSaveButton.click();
         
-        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//android.widget.Toast)[1]")));
         MobileElement toastMessageElement = (MobileElement) driver.findElement(By.xpath("(//android.widget.Toast)[1]"));
         Assertions.assertEquals("Please enter id of drug.", toastMessageElement.getText(), "Alert message text is not as expected.");    
@@ -510,14 +518,15 @@ public class MediphixAppTest_IndividualRun {
         drugNumberTxtBox.sendKeys("45633");
         MobileElement storageLocationDropDown = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugStorage");
         storageLocationDropDown.click();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Ward Office']")));
         MobileElement storageLocationDropDownValue = (MobileElement) driver.findElementByXPath("//*[@text='Ward Office']");
         storageLocationDropDownValue.click();
         MobileElement drugExpiryTxtBox = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugExpiry");
         drugExpiryTxtBox.sendKeys("");
         MobileElement drugSaveButton = (MobileElement) driver.findElementById("com.example.mediphix_app:id/registerDrugBtn");
         drugSaveButton.click();
-        
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//android.widget.Toast)[1]")));
         MobileElement toastMessageElement = (MobileElement) driver.findElement(By.xpath("(//android.widget.Toast)[1]"));
         Assertions.assertEquals("Please enter expiry date of drug.", toastMessageElement.getText(), "Alert message text is not as expected.");    
@@ -541,6 +550,8 @@ public class MediphixAppTest_IndividualRun {
         drugNumberTxtBox.sendKeys("45633");
         MobileElement storageLocationDropDown = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugStorage");
         storageLocationDropDown.click();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@text='Ward Office']")));
         MobileElement storageLocationDropDownValue = (MobileElement) driver.findElementByXPath("//*[@text='Ward Office']");
         storageLocationDropDownValue.click();
         MobileElement drugExpiryTxtBox = (MobileElement) driver.findElementById("com.example.mediphix_app:id/drugExpiry");
@@ -548,7 +559,6 @@ public class MediphixAppTest_IndividualRun {
         MobileElement drugSaveButton = (MobileElement) driver.findElementById("com.example.mediphix_app:id/registerDrugBtn");
         drugSaveButton.click();
         
-        WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//android.widget.Toast)[1]")));
         MobileElement toastMessageElement = (MobileElement) driver.findElement(By.xpath("(//android.widget.Toast)[1]"));
         Assertions.assertEquals("Drug successfully saved", toastMessageElement.getText(), "Alert message text is not as expected.");    
@@ -567,7 +577,7 @@ public class MediphixAppTest_IndividualRun {
         homeButton.click();
         MobileElement listDrugsButton = (MobileElement) driver.findElementById("com.example.mediphix_app:id/listOfDrugsBtn");
         listDrugsButton.click();
-        MobileElement drugName = (MobileElement) driver.findElementByXPath("(//android.widget.TextView[@resource-id=\"com.example.mediphix_app:id/drug_name\"])[2]");
+        MobileElement drugName = (MobileElement) driver.findElementByXPath("(//android.widget.TextView[@resource-id=\"com.example.mediphix_app:id/drug_name\"])[4]");
         MobileElement drugId = (MobileElement) driver.findElementByXPath("//android.widget.TextView[@resource-id=\"com.example.mediphix_app:id/drug_number\" and @text=\"ID: 45633\"]");
         MobileElement drugDate = (MobileElement) driver.findElementByXPath("//android.widget.TextView[@resource-id=\"com.example.mediphix_app:id/drug_expiry\" and @text=\"04/05/2024\"]");
 	
